@@ -1,10 +1,23 @@
-import logo from './logo.svg';
+import logo from './images/bbg.jpeg';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <nav className='nav'>
+        <ul className='ul-list'>
+         <button className='home'> <li>Home</li></button>
+         <button className='user'> <li>User</li></button>
+         <button className='contact'> <li>Contact</li></button>
+         <button className='blog'> <li>Blog</li></button>
+          
+          
+          
+        </ul>
+      </nav>
+      <img src={logo} className='imags' alt='imgs'/>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -17,9 +30,10 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
+
 }
 
 export default App;
